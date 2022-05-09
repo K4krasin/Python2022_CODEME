@@ -13,7 +13,6 @@ N = CzasC//CN
 ZN = round(N, 2)
 print()
 print("Liczba minut w ciągu tygodnia wynosi:", Wynik)
-print()
 print("Czas potrzebny do nauki wynosi:", N)
 
 
