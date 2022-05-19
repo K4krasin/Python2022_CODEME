@@ -10,7 +10,6 @@
 #
 # Jeśli po 6 próbach użytkownik nie zgadnie - wygrywa komputer.
 import random
-import cmath
 
 comp =  random.randrange(1,100)
 rounds = 6
