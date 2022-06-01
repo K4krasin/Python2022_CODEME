@@ -8,7 +8,81 @@
 
 import random
 
+tic_tac = ['-'] * 9
 
+
+def player_choice(place):
+    while tic_tac[place] != '-':
+        print("miejsce zajete")
+        place = int(input("Podaj liczbę odpowiadającą planszy (1 do 9): "))
+
+    tic_tac[place - 1] = 'X'
+    return tic_tac
+
+def com_choice (ran_place):
+    while tic_tac[ran_place] != '-':
+        ran_place = random.randrange(0, 9)
+    tic_tac[ran_place] = 'O'
+    print(tic_tac)
+    return tic_tac
+
+def end_game(plansza):
+    while True:
+        if plansza[0:3] == 'X':
+            print('Wygeywa gracz')
+            return True
+            break
+        elif plansza[3:6] == 'X':
+            print('Wygeywa gracz')
+            return True
+            break
+        elif plansza[6:9] == 'X':
+            print('Wygeywa gracz')
+            return True
+            break
+        elif plansza[0] == plansza[3] == plansza[6] == 'X':
+            print('Wygeywa gracz')
+            return True
+            break
+        elif plansza[1] == plansza[4] == plansza[7] == 'X':
+            print('Wygeywa gracz')
+            return True
+            break
+        elif plansza[2] == plansza[5] == plansza[8] == 'X':
+            print('Wygeywa gracz')
+            return True
+            break
+        elif plansza[0] == plansza[4] == plansza[8] == 'X':
+            print('Wygeywa gracz')
+            return True
+            break
+        elif plansza[2] == plansza[4] == plansza[6] == 'X':
+            print('Wygeywa gracz')
+            return True
+            break
+        else:
+            continue
+
+
+
+
+
+
+def main():
+
+    for _ in range(0,10):
+        p1_choice = int(input("Podaj liczbę odpowiadającą planszy (1 do 9): "))
+        player_choice(p1_choice)
+        compchoice = random.randrange(1, 10)
+        com_choice(compchoice)
+        #end_game(tic_tac)
+    print(tic_tac)
+
+main()
+
+
+
+'''
 list1 = ['-'] * 3
 list2 = ['-'] * 3
 list3 = ['-'] * 3
@@ -71,3 +145,4 @@ for _ in range(0,3):
     print(list3)
 
 
+'''
