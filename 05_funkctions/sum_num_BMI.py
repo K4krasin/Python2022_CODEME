@@ -6,7 +6,6 @@ arr = [3.5,3,5,532,324,23,1]
 result = sum_numbers(arr)
 print(result)
 
-
 def bmi(waga, wzrost):
     return round(waga/wzrost ** 2,2)
 
@@ -37,7 +36,7 @@ def bmi_result(bmi_res):
 
     return bmi_result()
 
-def main()
+def main():
     Weight = float(input('Podaj wagę:'))
     High = float(input('Podaj wzrost (w metrach):'))
 
@@ -47,4 +46,4 @@ def main()
     print(your_BMI)
 
 
-
+main()
