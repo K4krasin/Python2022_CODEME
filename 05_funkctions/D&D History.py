@@ -67,7 +67,7 @@ def chapter1_of_histry(name, age, gender, history_young_man):
                 history_young_man = int(input())
         return chapter1_of_histry(name, age, gender, history_young_man)
 
-def second_choise(history, name):
+def second_choise_ym(history, name):
     if history == 'przezorny':
         print(" 1) Poczekaj jeszcze chwilę.\n 2) Porozglądaj się po podwórku sąsiada.\n 3) Wróć do domu")
         history = int(input('Twój wybór: '))
@@ -77,9 +77,9 @@ def second_choise(history, name):
                   f'- Widziałem ich dzisiaj parę razy. Jednak nawet nie miałem okazji z nimi porozmwawiać. Był za duży ruch. Ciężko mi powiedzieć kiedy widziałem ich ostatni raz. Jednak kiedy wyjeżdzałem to plac handlowy był niemal pusty i jestem prawie pewien że nie było ich już tam'
                   f'Gdy tylko skończył wypowiadać ostatnie słowo to z okolic Twojego domu było słychać ogromny huk.\n - Co to było? - szybko podszedłeś do okna próbując coś zauważyć jednak w pomieszzceniu w jakim sie znajdowałeś nie było żadnego okna wychodzącego na Twój dom.')
         elif history == 2:
-            print("Kątem oka widzisz wóz, którym przyjechał Henryk z dzisiejszego jarmarku w Vosburn. Intuicja mówiCi że musisz tam podejść. ")
+            print("Kątem oka widzisz wóz, którym przyjechał Henryk z dzisiejszego jarmarku w Vosburn. Intuicja mówi Ci że musisz tam podejść. ")
         elif history == 3:
-            print("Wracasz powoli w stronę domu gdy nagle dostrzegasz ruch")
+            print("Wracasz powoli w stronę domu gdy nagle dostrzegasz ruch w pobliskich krzakach")
         else:
             print("Zrywa się wiatr. Wisząca nad drzwiami nieiwielka figurka mająca odstraszać złe duchy spada z gwoździa prosto na Twoją głowę. Przypominasz sobie, że masz tylko 3 wybory")
     elif history == 'bojazliwy':
@@ -92,8 +92,6 @@ def second_choise(history, name):
         else:
             print("Dostajesz w łeb")
     return second_choise(history,name)
-
-    return second_choise(history, name)
 
 
 
@@ -111,11 +109,7 @@ def main():
     hero_history = 0
     print(intro_to_the_history(hero_name, hero_age, hero_sex))
     hero_history = chapter1_of_histry(hero_name, hero_age, hero_sex, hero_history)
-    second_choise(hero_history, hero_name)
-
-
-
-
+    second_choise_ym(hero_history, hero_name)
 
 
 
