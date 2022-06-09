@@ -1,4 +1,5 @@
 import random
+import os
 
 def get_wuoute(file):
   with open(f'{file}.txt', encoding="utf-8") as fopen:
@@ -8,6 +9,7 @@ def get_wuoute(file):
   return quoute
 
 def show(qoute):
+
   qoute = qoute.strip('\n')
   qoute = qoute.split(' - ')
   lenth = len(qoute[0]) + 20
@@ -19,10 +21,14 @@ def show(qoute):
 
 
 
+
 def main():
 
   name = input("Podaj nazwę pliku: ")
   quoute = get_wuoute(name)
   show(quoute)
+  print(os.listdir())
+  print(os.path.getsize('cytat.txt'))
+
 
 main()
