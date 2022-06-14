@@ -1,4 +1,4 @@
-# script.py
+# ex1.py
 import script as m3
 
 def get_three_values():

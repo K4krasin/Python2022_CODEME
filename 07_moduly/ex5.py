@@ -14,7 +14,7 @@ def select_method(fig):
     elif fig == 'P':
         a = int(input("Podaj wymiar ściany prostokatu: "))
         b = int(input("Podaj wymiar ściany prostokatu: "))
-        return a*h/2
+        return a*b/2
     elif fig == 'T':
         a = int(input("Podaj wymiar podstawy trojkatu: "))
         h = int(input("Podaj wysokość trójkąta: "))
@@ -22,11 +22,3 @@ def select_method(fig):
     else:
         r = int(input("Podaj promień koła: "))
         return 3.14*r*r
-
-def add_another_shape():
-
-
-
-
-
-
